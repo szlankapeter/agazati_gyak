@@ -1,0 +1,97 @@
+*{
+    box-sizing: border-box;
+    font-family: Arial, Verdana,sans-serif;
+    color: beige;
+    font-size: 10pt;
+    margin: 0;
+}
+main{
+    margin: auto;
+    width: 80%;
+}
+body{
+    background-image: url(kepek/black.png);
+}
+header{
+    background-image: url(kepek/game.jpg);
+    height: 300px;
+    background-size: cover;
+}
+article{
+    background-color: rgb(207, 204, 204);
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+article p, li, ul{
+    color: black;
+    font-size: 10pt;
+    text-align: justify;
+}
+h2{
+    font-size: 15pt;
+    color: black;
+}
+nav{
+    height: fit-content;
+    background-color: rgb(68, 67, 67);
+}
+nav ul{
+    padding: 0;
+    list-style: none;
+    display: grid;
+    grid-template-columns: 0fr 0fr;
+    text-align: center;
+}
+
+nav a{
+    padding-top: 10px;
+    padding-left: 5px;
+    display: block;
+    height: 40px;
+    width: 110px;
+    border-right: 1px beige solid;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav a:hover{
+    background-color: orange;
+}
+
+.kep{
+    width: 300px;
+    float: right;
+    margin: 20px;
+}
+footer{
+    background-color: orange;
+    height: 20px;
+    text-align: center;
+}
+
+
+@media only screen and (max-width: 700px){
+
+    main{
+        width: 100%;
+    }
+    nav ul{
+        grid-template-columns: 0fr;
+    }
+    nav{
+        height: fit-content;
+    }
+}
+
+
+table, th, td{
+    color: black;
+    border: 1px solid black;
+}
+table{
+    margin: 20px;
+    width: 100%;
+    border-collapse: collapse;
+}
+.tablazat{
+    margin: auto;
+}
